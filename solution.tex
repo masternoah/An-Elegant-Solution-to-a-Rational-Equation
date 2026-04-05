@@ -1,0 +1,60 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amsmath, amssymb, amsthm} % Math stuff
+\usepackage[letterpaper, top=1.0 in, bottom=1.0in, left = 1.0in, right=1.0in, heightrounded]{geometry}
+\usepackage{setspace}
+\theoremstyle{definition}
+\onehalfspacing
+
+\title{An Elegant Solution}
+\author{Noah Park}
+\date{April 2026}
+
+\begin{document}
+
+\maketitle
+
+\section{The Problem}
+
+Find the positive root of $\frac {1}{x^2-10x-29} + \frac{1}{x^2-10x-45} - \frac {2}{x^2-10x-69} = 0$.
+
+\section{The Solution}
+\begin{align*}
+\frac {1}{x^2-10x-29} + \frac{1}{x^2-10x-45} - \frac {2}{x^2-10x-69} &= 0\\
+\frac {1}{x^2-10x-29} + \frac{1}{x^2-10x-45} &=  \frac {2}{x^2-10x-69}
+\end{align*}
+
+
+Let $y = x^2-10x-37$.
+
+\[
+\frac {1}{y+8} + \frac{1}{y-8} =  \frac {2}{y-32}
+\]
+
+Combine the left-hand side:
+\begin{align*}
+\frac {y-8}{y^2-64} + \frac{y+8}{y^2-64} &=  \frac {2}{y-32}\\
+\frac {2y}{y^2-64} &=  \frac {2}{y-32} \\
+\frac {y}{y^2-64} &=  \frac {1}{y-32}
+\end{align*}
+
+Cross-multiplying:
+\begin{align*}
+y^2-32y&=y^2-64 \\
+-32y&=-64 \\
+y&=2
+\end{align*}
+
+Substituting back:
+\begin{align*}
+x^2-10x-37&=2\\
+x^2-10x-39&=0\\
+(x-13)(x+3)&=0
+\end{align*}
+
+Thus,
+\[
+x= \boxed{13}
+\]
+
+\end{document}
